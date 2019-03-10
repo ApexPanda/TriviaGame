@@ -1,47 +1,64 @@
 body {
     background-image: url(https://media.istockphoto.com/vectors/anchor-seamless-pattern-vector-boat-pirate-helm-nautical-maritime-vector-id993160100);
+    scroll-behavior: smooth;
 }
 
 .title {
-    background-color: #f7f7f7;
-    height: 140px;
-    margin-left: 240px;
+    background-color: #8ad6cc;
+    height: 105px;
+    margin-left: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Lora', serif;
-    font: xx-large bold;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
 }
 
 .question {
     background-color: #F97171;
+    height: 100px;
+    margin-left: 280px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .q1 {
     background-color: #385A7C;
     margin: 2px;
     color: white;
+    height: 80px;
+    margin-left: 325px;
 }
 
 .q2 {
     background-color: #385A7C;
     margin: 2px;
     color: white;
+    height: 80px;
 }
 
 .q3{
     background-color: #385A7C;
     margin: 2px;
     color: white;
+    height: 80px;
+    margin-left: 325px;
 }
 
 .q4 {
     background-color: #385A7C;
     margin: 2px;
+    height: 80px;
     color: white;
 }
 
-#footer {
-    background-image: url(http://media.tnh.me/543df9785ccacf49ad04787e/590a54f35ccacf043b348e30);
-    background-color: 	#b2eee6;
+footer {
+    background-image: url(https://media.giphy.com/media/AchfIoUtHr5E4/giphy.gif);
+    height: 305px;
+    position: fixed;
+    left: 2px;
+    bottom: 0;
+    width: 20%;
 }
 
