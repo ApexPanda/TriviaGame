@@ -1,0 +1,47 @@
+body {
+    background-image: url(https://media.istockphoto.com/vectors/anchor-seamless-pattern-vector-boat-pirate-helm-nautical-maritime-vector-id993160100);
+}
+
+.title {
+    background-color: #f7f7f7;
+    height: 140px;
+    margin-left: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+    font: xx-large bold;
+}
+
+.question {
+    background-color: #F97171;
+}
+
+.q1 {
+    background-color: #385A7C;
+    margin: 2px;
+    color: white;
+}
+
+.q2 {
+    background-color: #385A7C;
+    margin: 2px;
+    color: white;
+}
+
+.q3{
+    background-color: #385A7C;
+    margin: 2px;
+    color: white;
+}
+
+.q4 {
+    background-color: #385A7C;
+    margin: 2px;
+    color: white;
+}
+
+#footer {
+    background-image: url(http://media.tnh.me/543df9785ccacf49ad04787e/590a54f35ccacf043b348e30);
+    background-color: 	#b2eee6;
+}
+
