@@ -1,3 +1,14 @@
+	$(document).ready(function(){
+	});
+
+	$(document).on("click", "#start", function(event){
+		alert("look it finally works");
+	});
+
+	$(document).on("click", "#finish", function(event){
+		alert("look this works too! -_-");
+	});
+		
 		var correctGuesses = 0;
    
 		var incorrectGuesses = 0;
@@ -5,6 +16,14 @@
 		var wins = 0;
 
 		var losses = 0;
+
+		var timer = 120;
+
+		// var game = {
+		// 	correctGuesses: 0,
+		// 	incorrectGuesses: 0,
+		// 	timer: 0,
+		// };
 
     // questions array
     var questions = [
@@ -122,6 +141,9 @@
 // 		$(".timer").html("<strong>" + time + "</strong>");
 // 	}
 // }
+
+
+
 
 
 

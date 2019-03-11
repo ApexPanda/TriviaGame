@@ -80,7 +80,7 @@ body {
     font-weight: bold;
 }
 
-.start {
+#start {
     border: black 2px solid;
     border-width: 6px;
     background-color: #fcf8f0;
@@ -92,7 +92,7 @@ body {
     margin-top: 15px;
 }
 
-.finish {
+#finish {
     border: black 2px solid;
     border-width: 6px;
     background-color: #fcf8f0;
