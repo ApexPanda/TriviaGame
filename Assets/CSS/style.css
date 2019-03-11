@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://data.whicdn.com/images/50877397/large.jpg);
+    background-image: url(http://data.whicdn.com/images/106809837/large.jpg);
     scroll-behavior: smooth;
 }
 
@@ -83,7 +83,7 @@ body {
 .start {
     border: black 2px solid;
     border-width: 6px;
-    background-color: #fffefd;
+    background-color: #f7f6f5;
     margin: 2px;
     text-align: center;
     font-weight: bold;
@@ -92,10 +92,10 @@ body {
     margin-top: 15px;
 }
 
-.done {
+.finish {
     border: black 2px solid;
     border-width: 6px;
-    background-color: #fffefd;
+    background-color: #f7f6f5;
     margin: 2px;
     text-align: center;
     font-weight: bold;
