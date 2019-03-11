@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://media.istockphoto.com/vectors/anchor-seamless-pattern-vector-boat-pirate-helm-nautical-maritime-vector-id993160100);
+    background-image: url(https://data.whicdn.com/images/50877397/large.jpg);
     scroll-behavior: smooth;
 }
 
@@ -109,6 +109,6 @@ footer {
     position: fixed;
     left: 2px;
     bottom: 0;
-    width: 20%;
+    width: 260px;
 }
 

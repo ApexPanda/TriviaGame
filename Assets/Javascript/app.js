@@ -1,4 +1,3 @@
-		
 		var correctGuesses = 0;
    
 		var incorrectGuesses = 0;
@@ -83,22 +82,26 @@
 	    question: "What is the oceans largest mountain?",
 	    choices: ["Mauna Kea", "Argo", "Lokin", "Everest"],
 	    correctAnswer: "Mauna Kea",
-      }];
+			}];
+			
+
 // Populate the question and choices box with option from array
 // This happens on click of the button start
 // Need timer to start on click of the button start
 // Does the button clicked match the correct answer
+// Math to calculate the right answers vs wrong
 
 // When timer equals zero, it ends the game
 
 
-function startButton (){
-	for (var i = 0; i < questions.length; i++) {
-		const questionPopulate = questions[i];
-		$(".question").text(questions.question);
-		console.log(startButton);
-	}
-}
+// function startButton (){
+// 	for (var i = 0; i < questions.length; i++) {
+// 		const questionPopulate = questions[i];
+// 		$(".question").text(questions.question);
+// 		console.log(startButton);
+// 	}
+// }
+
 
 // var startGame = $(".start").on("click", function(){
 // 		// startButton();
