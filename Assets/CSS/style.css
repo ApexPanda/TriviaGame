@@ -83,7 +83,7 @@ body {
 .start {
     border: black 2px solid;
     border-width: 6px;
-    background-color: #f7f6f5;
+    background-color: #fcf8f0;
     margin: 2px;
     text-align: center;
     font-weight: bold;
@@ -95,7 +95,7 @@ body {
 .finish {
     border: black 2px solid;
     border-width: 6px;
-    background-color: #f7f6f5;
+    background-color: #fcf8f0;
     margin: 2px;
     text-align: center;
     font-weight: bold;
