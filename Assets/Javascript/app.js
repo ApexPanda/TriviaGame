@@ -1,13 +1,13 @@
 	$(document).ready(function(){
 	});
 
-	$(document).on("click", "#start", function(event){
-		alert("look it finally works");
-	});
+	// $(document).on("click", "#start", function(event){
+	// 	alert("look it finally works");
+	// });
 
-	$(document).on("click", "#finish", function(event){
-		alert("look this works too! -_-");
-	});
+	// $(document).on("click", "#finish", function(event){
+	// 	alert("look this works too! -_-");
+	// });
 		
 		var correctGuesses = 0;
    
@@ -112,35 +112,41 @@
 
 // When timer equals zero, it ends the game
 
+var startGame = $("#start").on("click", function(){
+	startButton();
+	timer();
+});
 
-// function startButton (){
-// 	for (var i = 0; i < questions.length; i++) {
-// 		const questionPopulate = questions[i];
-// 		$(".question").text(questions.question);
-// 		console.log(startButton);
-// 	}
-// }
+function startButton (){
+	for (var i = 0; i < questions.length; i++) {
+		const questionPopulate = questions[i].question;
+		const q1Populate= questions[i].choices[0];
+		const q2Populate= questions[i].choices[1];
+		const q3Populate= questions[i].choices[2];
+		const q4Populate= questions[i].choices[3];
+		$(".question").text("Question: " + questionPopulate);
+		$(".q1").text(q1Populate);
+		$(".q2").text(q2Populate);
+		$(".q3").text(q3Populate);
+		$(".q4").text(q4Populate);
+	}
+}
 
 
-// var startGame = $(".start").on("click", function(){
-// 		// startButton();
-// 		alert("test");
-// });
 
-
-// function timer() {
-// 	clock = setInterval(countDown, 1000);
-// 	function countDown() {
-// 		if (time < 1) {
-// 			clearInterval(clock);
-// 			userTimeout();
-// 		}
-// 		if (time > 0) {
-// 			time--;
-// 		}
-// 		$(".timer").html("<strong>" + time + "</strong>");
-// 	}
-// }
+function timer() {
+	clock = setInterval(countDown, 1000);
+	function countDown() {
+		if (time < 1) {
+			clearInterval(clock);
+			userTimeout();
+		}
+		if (time > 0) {
+			time--;
+		}
+		$("#timer").html("<strong>" + time + "</strong>");
+	}
+}
 
 
 

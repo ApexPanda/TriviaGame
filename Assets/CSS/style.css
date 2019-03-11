@@ -22,6 +22,7 @@ body {
     margin-bottom: 10px;
     text-align: center;
     font-size: large;
+    padding-top: 18px;
 }
 
 .q1 {
@@ -30,6 +31,9 @@ body {
     color: white;
     height: 80px;
     margin-left: 325px;
+    text-align: center;
+    font-size: large;
+    padding-top: 18px;
 }
 
 .q2 {
@@ -37,6 +41,9 @@ body {
     margin: 2px;
     color: white;
     height: 80px;
+    text-align: center;
+    font-size: large;
+    padding-top: 18px;
 }
 
 .q3{
@@ -45,6 +52,9 @@ body {
     color: white;
     height: 80px;
     margin-left: 325px;
+    text-align: center;
+    font-size: large;
+    padding-top: 18px;
 }
 
 .q4 {
@@ -52,9 +62,12 @@ body {
     margin: 2px;
     height: 80px;
     color: white;
+    text-align: center;
+    font-size: large;
+    padding-top: 18px;
 }
 
-.timer {
+#timer {
     background-color: #8ad6cc;
     margin: 2px;
     margin-left: 400px;
