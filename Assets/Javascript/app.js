@@ -1,18 +1,15 @@
-$(document).ready(function() {
-  
+		
+		var correctGuesses = 0;
+   
+		var incorrectGuesses = 0;
+		
+		var wins = 0;
 
-    // track which question we are on
-    var questionCounter = 0;
-    // initial time of 15 seconds for each question
-    var timer = 20;
-    // will keep tally of right guesses for end game
-    var correctGuesses = 0;
-    //will keep tally of wrong guesses for end game
-    var incorrectGuesses = 0;
+		var losses = 0;
 
-    // question & answer array
+    // questions array
     var questions = [
-      {
+    {
 	    question: "What is the primary food source for coral reefs?",
 	    choices: ["Sunlight", "Plankton", "Crustaceans", "Small Fish"],
 	    correctAnswer: "Plankton"
@@ -61,7 +58,6 @@ $(document).ready(function() {
 	    question: "About how much of the ocean has been discovered?",
 	    choices: ["60 Percent", "5 Percent", "15 Percent", "25 Percent"],
 	    correctAnswer: "5 Percent",
-	    image: "<img src='assets/images/halfLife.jpg' class='img-circle shadow'>"
 	  },
 	  {
 	    question: "What percentage of all life forms on Earth are aquatic?",
@@ -72,7 +68,6 @@ $(document).ready(function() {
 	    question: "The deepest recorded point on the ocean floor is the Mariana Trench, is how deep?",
 	    choices: ["36,000 Feet", "42,000 Feet", "28,000 Feet", "12,000 Feet"],
 	    correctAnswer: "36,000 Feet",
-	    image: "<img src='assets/images/bioshock.jpg' class='img-circle shadow'>"
 	  },
 	  {
 	    question: "How many oceans are there on Earth? ",
@@ -88,4 +83,43 @@ $(document).ready(function() {
 	    question: "What is the oceans largest mountain?",
 	    choices: ["Mauna Kea", "Argo", "Lokin", "Everest"],
 	    correctAnswer: "Mauna Kea",
-	  }];
+      }];
+// Populate the question and choices box with option from array
+// This happens on click of the button start
+// Need timer to start on click of the button start
+// Does the button clicked match the correct answer
+
+// When timer equals zero, it ends the game
+
+
+function startButton (){
+	for (var i = 0; i < questions.length; i++) {
+		const questionPopulate = questions[i];
+		$(".question").text(questions.question);
+		console.log(startButton);
+	}
+}
+
+// var startGame = $(".start").on("click", function(){
+// 		// startButton();
+// 		alert("test");
+// });
+
+
+// function timer() {
+// 	clock = setInterval(countDown, 1000);
+// 	function countDown() {
+// 		if (time < 1) {
+// 			clearInterval(clock);
+// 			userTimeout();
+// 		}
+// 		if (time > 0) {
+// 			time--;
+// 		}
+// 		$(".timer").html("<strong>" + time + "</strong>");
+// 	}
+// }
+
+
+
+

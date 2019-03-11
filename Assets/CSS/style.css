@@ -21,6 +21,7 @@ body {
     margin-left: 280px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: large;
 }
 
 .q1 {
@@ -51,6 +52,55 @@ body {
     margin: 2px;
     height: 80px;
     color: white;
+}
+
+.timer {
+    background-color: #8ad6cc;
+    margin: 2px;
+    margin-left: 400px;
+    margin-top: 8px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wins {
+    background-color: #F97171;
+    margin: 2px;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.losses {
+    background-color: #8ad6cc;
+    margin: 2px;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.start {
+    border: black 2px solid;
+    border-width: 6px;
+    background-color: #fffefd;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 500px;
+    height: 39px;
+    margin-top: 15px;
+}
+
+.done {
+    border: black 2px solid;
+    border-width: 6px;
+    background-color: #fffefd;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+    height: 39px;
+    margin-top: 15px;
 }
 
 footer {
