@@ -1,17 +1,13 @@
 	$(document).ready(function(){
 	});
-
-	// $(document).on("click", "#start", function(event){
-	// 	alert("look it finally works");
-	// });
-
-	// $(document).on("click", "#finish", function(event){
-	// 	alert("look this works too! -_-");
-	// });
 		
 		var correctGuesses = 0;
    
 		var incorrectGuesses = 0;
+
+		var questionCounter = 0;
+
+		var currentQuestion = 0;
 		
 		var wins = 0;
 
@@ -19,11 +15,9 @@
 
 		var timer = 120;
 
-		// var game = {
-		// 	correctGuesses: 0,
-		// 	incorrectGuesses: 0,
-		// 	timer: 0,
-		// };
+		var answered = "";
+
+		var unanswered = "";
 
     // questions array
     var questions = [
@@ -101,23 +95,25 @@
 	    question: "What is the oceans largest mountain?",
 	    choices: ["Mauna Kea", "Argo", "Lokin", "Everest"],
 	    correctAnswer: "Mauna Kea",
-			}];
+			}
+		];
 			
 
-// Populate the question and choices box with option from array
-// This happens on click of the button start
-// Need timer to start on click of the button start
-// Does the button clicked match the correct answer
-// Math to calculate the right answers vs wrong
-
-// When timer equals zero, it ends the game
-
+// Starts the timer when start is clicked
 var startGame = $("#start").on("click", function(){
 	startButton();
 	timerFunc();
-	console.log(startGame);
+ });
+
+$("#test").click(function(event){
+	event.preventDefault();
+	var val = $(this).val();
+	// checkAnswer();
+	console.log(val);
 });
 
+
+// // Loops through question array and places text on the field
 function startButton (){
 	for (var i = 0; i < questions.length; i++) {
 		const questionPopulate = questions[i].question;
@@ -125,16 +121,36 @@ function startButton (){
 		const q2Populate= questions[i].choices[1];
 		const q3Populate= questions[i].choices[2];
 		const q4Populate= questions[i].choices[3];
-		$(".question").text("Question: " + questionPopulate);
-		$(".q1").text(q1Populate);
-		$(".q2").text(q2Populate);
-		$(".q3").text(q3Populate);
-		$(".q4").text(q4Populate);
+		$("#question").text("Question: " + questionPopulate);
+		$("#q1").text(q1Populate);
+		$("#q2").text(q2Populate);
+		$("#q3").text(q3Populate);
+		$("#q4").text(q4Populate);
+		console.log(questions[i].correctAnswer);
 	}
+};
+
+function checkAnswer() {
+	var correctAnswer = questions[14].correctAnswer;
+	console.log(correctAnswer);
 }
 
 
+function nextQuestion() {
+		if(answered === true);
 
+			$("#question").text(currentQuestion+1);
+};
+
+function userTimeout() {
+	if(timer === 0) {
+		alert("time is up!");
+	}
+};
+
+
+
+// function to get the timer to run
 function timerFunc() {
 	clock = setInterval(countDown, 1000);
 	function countDown() {
@@ -148,6 +164,18 @@ function timerFunc() {
 		$("#timer").html("Timer: " + timer);
 	}
 };
+
+function addToWin(){
+// add math part to figure out if number of right answer equal a win 
+// If it equals a win, add one to wins variable
+// Update wins class on HTML with the wins amount
+};
+
+function addToLosses(){
+	// add math part to figure out if number of incorrect equal a loss
+	// If it equals a los, add one to losses variable
+	// Update losses class on HTML with the losses amount
+	};
 
 
 

@@ -15,7 +15,7 @@ body {
     color: black;
 }
 
-.question {
+#question {
     background-color: #F97171;
     height: 100px;
     margin-left: 280px;
@@ -25,7 +25,7 @@ body {
     padding-top: 18px;
 }
 
-.q1 {
+#q1 {
     background-color: #385A7C;
     margin: 2px;
     color: white;
@@ -36,7 +36,7 @@ body {
     padding-top: 18px;
 }
 
-.q2 {
+#q2 {
     background-color: #385A7C;
     margin: 2px;
     color: white;
@@ -46,7 +46,7 @@ body {
     padding-top: 18px;
 }
 
-.q3{
+#q3{
     background-color: #385A7C;
     margin: 2px;
     color: white;
@@ -57,7 +57,7 @@ body {
     padding-top: 18px;
 }
 
-.q4 {
+#q4 {
     background-color: #385A7C;
     margin: 2px;
     height: 80px;
