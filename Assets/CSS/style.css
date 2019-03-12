@@ -75,6 +75,7 @@ body {
     height: 60px;
     text-align: center;
     font-weight: bold;
+    padding-top: 16px;
 }
 
 .wins {
@@ -83,6 +84,7 @@ body {
     margin-top: 8px;
     text-align: center;
     font-weight: bold;
+    padding-top: 16px;
 }
 
 .losses {
@@ -91,6 +93,7 @@ body {
     margin-top: 8px;
     text-align: center;
     font-weight: bold;
+    padding-top: 16px;
 }
 
 #start {

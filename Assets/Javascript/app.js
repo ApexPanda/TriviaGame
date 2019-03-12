@@ -114,7 +114,8 @@
 
 var startGame = $("#start").on("click", function(){
 	startButton();
-	timer();
+	timerFunc();
+	console.log(startGame);
 });
 
 function startButton (){
@@ -134,19 +135,20 @@ function startButton (){
 
 
 
-function timer() {
+function timerFunc() {
 	clock = setInterval(countDown, 1000);
 	function countDown() {
-		if (time < 1) {
+		if (timer < 1) {
 			clearInterval(clock);
 			userTimeout();
 		}
-		if (time > 0) {
-			time--;
+		if (timer > 0) {
+			timer--;
 		}
-		$("#timer").html("<strong>" + time + "</strong>");
+		$("#timer").html("Timer: " + timer);
 	}
-}
+};
+
 
 
 
