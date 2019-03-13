@@ -128,6 +128,12 @@ function startButton (){
 		$("#q4").text(q4Populate);
 		console.log(questions[i].correctAnswer);
 	}
+	// for (var i = 0; i < questions.length; i++) {
+	// 	$("#question").html("<h3>" + questions[i].question + "</h3>");
+	// 	for (var j = 0; j < questions[i].choices.length; j++) {
+	// 		$(".col-4").html("<h5>" + questions[i].choices[j] + "</h6>");
+	// 	}
+	// }
 };
 
 function checkAnswer() {
